@@ -19,7 +19,8 @@ const styles = makeStyles((theme)=>({
 },
 logo: {
   marginLeft: '2rem',
-  width: '6rem'
+  width: '6rem',
+  borderRadius: '10%'
 },
 tabContainer: {
   marginLeft: 'auto',
@@ -27,7 +28,7 @@ tabContainer: {
     marginRight: '10rem'
   },
   navIcons: {
-    fontSize: '4rem'
+    fontSize: '6rem'
   }
 }
 }))

@@ -43,9 +43,9 @@ export default function About(){
   I have over 8 years of experience in restaurant management. I have successfully launched menus, organized charitable community events and piloted merchandising, marketing and training initiatives. During my tenure in that industry, I was able to continuously grow quarterly sales while keeping team morale at an all time high. My previous supervisor described me as a “dedicated leader that sets a great example with his positive approach to problem solving”. I love overcoming challenges and using my communication skills to maintain a fun, creative, and productive work environment .
   </Typography>
         </Grid>
-        <Grid item>
-        <img src={Avatar} className={classes.avatar} />
-        </Grid>
+
+        
+
       </Grid>
     </React.Fragment>
   )

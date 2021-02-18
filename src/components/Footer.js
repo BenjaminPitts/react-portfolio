@@ -6,17 +6,18 @@ export default function Footer(){
   return (
     <React.Fragment>
     <Grid style={{textAlign: 'center',
-    backgroundColor: 'blue',
+    backgroundColor: '#003366',
     color: 'white',
     height: '10vh',
     margin: '0 auto'}}
     justify='center'
     alignContent='center'
     alignItems='center'
-    direction='column'>
-    
+    direction='column'
+    >
+
     <Grid item>
-    <Typography>benjaminjackpitts@gmail.com</Typography>
+    <Typography><a href='mailto:benjaminjackpitts@gmail.com'>benjaminjackpitts@gmail.com</a></Typography>
     </Grid>
     </Grid>
     </React.Fragment>

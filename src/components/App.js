@@ -15,9 +15,9 @@ function App() {
     <BrowserRouter>
     <Header />
     <HeroBanner />
-    <About />
-    <Tech />
-    <Experience />
+    <About /><br /><br /><br />
+    <Tech /><br /><br /><br />
+    <Experience /><br /><br /><br />
     <Footer />
     </BrowserRouter>
     </ThemeProvider>
