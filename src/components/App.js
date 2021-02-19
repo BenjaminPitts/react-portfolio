@@ -16,8 +16,8 @@ function App() {
     <Header />
     <HeroBanner />
     <About /><br /><br /><br />
-    <Tech /><br /><br /><br />
     <Experience /><br /><br /><br />
+    <Tech /><br /><br /><br />
     <Footer />
     </BrowserRouter>
     </ThemeProvider>

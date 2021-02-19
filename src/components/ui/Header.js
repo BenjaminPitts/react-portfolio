@@ -18,17 +18,19 @@ const styles = makeStyles((theme)=>({
   marginBottom: '2em',
 },
 logo: {
-  marginLeft: '2rem',
-  width: '6rem',
-  borderRadius: '10%'
+  marginLeft: '1rem',
+  width: '6rem'
 },
 tabContainer: {
   marginLeft: 'auto',
+  justify: 'space-around',
+  textDecoration: 'inherit',
   [theme.breakpoints.down('xs')]: {
     marginRight: '10rem'
   },
   navIcons: {
-    fontSize: '6rem'
+    fontSize: '30px',
+    width: '4rem'
   }
 }
 }))
@@ -40,22 +42,16 @@ export default function Header(){
 
 const routes = [
 { name: 'About', link: '#about' },
-{ name: 'Contact', link: '#contact' },
+{ name: 'Contact', link: '#contact'},
 { name: 'Experience', link: '#experience'}
 ]
 
 const tabs = (
 		<React.Fragment>
 			<div className={classes.tabContainer}>
-				{routes.map((route, id) => {
-          return(
-            <Link to={route.link} style={{ textDecoration: 'none', color: 'white'}}>
-            <Tab value={route.id} label={route.name} key={`${route}.${id}`} >
-              {route.name}
-            </Tab>
-            </Link>
-          )
-				})}
+			<Link onClick={()=> window.open('https://www.linkedin.com/in/benjaminjackpitts/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >LinkedIn</Link>
+      <Link onClick={()=> window.open('https://github.com/BenjaminPitts', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >GitHub</Link>
+      <Link onClick={()=> window.open('https://benjaminjackpitts.wordpress.com/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >Wordpress</Link>
 			</div>
 		</React.Fragment>
 	);

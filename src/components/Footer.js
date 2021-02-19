@@ -8,7 +8,7 @@ export default function Footer(){
     <Grid style={{textAlign: 'center',
     backgroundColor: '#003366',
     color: 'white',
-    height: '10vh',
+    height: '15vh',
     margin: '0 auto'}}
     justify='center'
     alignContent='center'
@@ -16,9 +16,6 @@ export default function Footer(){
     direction='column'
     >
 
-    <Grid item>
-    <Typography><a href='mailto:benjaminjackpitts@gmail.com'>benjaminjackpitts@gmail.com</a></Typography>
-    </Grid>
     </Grid>
     </React.Fragment>
   )

@@ -37,13 +37,13 @@ const heroBanner = (
     <Grid item className={classes.heroBackground}>
     <Typography className={classes.heroBannerText} variant='h5' align='left' style={{marginTop: '15rem', marginLeft: '5rem'}}>Hello world, my name is:
     </Typography>
-      <Typography className={classes.heroBannerText} variant='h1' align='left'>Ben Pitts
+      <Typography className={classes.heroBannerText} variant='h1' align='left'>Benjamin Pitts
       </Typography>
-      <Typography className={classes.heroBannerText} variant='h5' align='left'>I am a software developer from Denver, CO
+      <Typography className={classes.heroBannerText} variant='h5' align='left'>I am a full-stack software developer from Denver, CO
       </Typography><br />
       <Typography variant='h7' align='left'>
       </Typography><br /><br />
-      <Button className={classes.contactBtn} href='mailto:benjaminjackpitts@gmail.com'>Email Me Here
+      <Button className={classes.contactBtn} href='mailto:benjaminjackpitts@gmail.com'>Email Me
       </Button>
     </Grid>
   </Grid>
