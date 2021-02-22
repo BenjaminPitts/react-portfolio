@@ -4,6 +4,9 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import {makeStyles, useTheme} from '@material-ui/styles'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 import {faJsSquare, faNode, faReact, faPhp, faLaravel, faHtml5, faCss3, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 const styles = makeStyles((theme) => ({
@@ -20,15 +23,16 @@ export default function Tech(){
   const technologies = [
 		{name: 'HTML', icon: faHtml5}, {name: 'CSS', icon: faCss3},
 		{name: 'JavaScript', icon: faJsSquare}, {name: 'Node', icon: faNode}, {name: 'React', icon: faReact}, {name: 'PHP', icon: faPhp},
-		{name: 'Laravel', icon: faLaravel}, {name: 'GitHub', icon: faGithub}
+		{name: 'Laravel', icon: faLaravel}, {name: 'GitHub', icon: faGithub}, 
   ]
+
   return(
     <Grid item container direction='column'
     justify='center' alignItems='center'>
     <Grid item>
-
 		<Typography variant='h3'>Technologies</Typography></Grid>
     <Grid item container direction='row' alignItems='center' justify='center'>
+
 {technologies.map((tech, index)=>{
   return (
     <Grid item style={{textAlign: 'center'}} key={index}>
@@ -40,6 +44,7 @@ export default function Tech(){
     </Grid>
   )
 })}
+
     </Grid>
     </Grid>
   )

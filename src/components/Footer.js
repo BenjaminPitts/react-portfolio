@@ -9,6 +9,7 @@ export default function Footer(){
     backgroundColor: '#003366',
     color: 'white',
     height: '15vh',
+    width: '100%',
     margin: '0 auto'}}
     justify='center'
     alignContent='center'

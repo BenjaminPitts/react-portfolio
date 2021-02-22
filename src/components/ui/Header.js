@@ -16,17 +16,23 @@ const styles = makeStyles((theme)=>({
   toolBarMargin: {
   ...theme.mixins.toolbar,
   marginBottom: '2em',
+
 },
 logo: {
-  marginLeft: '1rem',
-  width: '6rem'
+  marginLeft: '0',
+  width: '4rem',
+  opacity: '.8',
+  border: '5px solid white'
 },
 tabContainer: {
   marginLeft: 'auto',
-  justify: 'space-around',
-  textDecoration: 'inherit',
+  justify: 'center',
+  textDecoration: 'none',
   [theme.breakpoints.down('xs')]: {
-    marginRight: '10rem'
+    marginRight: '0',
+    color: 'white',
+    fontSize: '10px',
+
   },
   navIcons: {
     fontSize: '30px',
@@ -49,9 +55,9 @@ const routes = [
 const tabs = (
 		<React.Fragment>
 			<div className={classes.tabContainer}>
-			<Link onClick={()=> window.open('https://www.linkedin.com/in/benjaminjackpitts/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >LinkedIn</Link>
-      <Link onClick={()=> window.open('https://github.com/BenjaminPitts', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >GitHub</Link>
-      <Link onClick={()=> window.open('https://benjaminjackpitts.wordpress.com/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '20px', margin: '0 2rem'}} >Wordpress</Link>
+			<Link onClick={()=> window.open('https://www.linkedin.com/in/benjaminjackpitts/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '18px', margin: '0 .5rem'}} >LinkedIn</Link>
+      <Link onClick={()=> window.open('https://github.com/BenjaminPitts', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '18px', margin: '0 .5rem'}} >GitHub</Link>
+      <Link onClick={()=> window.open('https://benjaminjackpitts.wordpress.com/', "_blank")} style={{textDecoration: 'none', color: 'white', fontSize: '18px', margin: '0 .5rem'}} >Wordpress</Link>
 			</div>
 		</React.Fragment>
 	);
@@ -75,7 +81,7 @@ const icons = (
         <Button disableRipple>
         <img src={Logo} className={classes.logo} alt={'logo'} />
         </Button>
-        {matchesXS ? icons : tabs}
+        {matchesXS ? tabs : tabs}
         </ToolBar>
       </AppBar>
       <div className={classes.toolBarMargin}></div>

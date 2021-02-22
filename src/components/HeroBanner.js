@@ -9,7 +9,9 @@ import Button from '@material-ui/core/Button'
 const styles = makeStyles((theme)=>({
   mainContainer: {
     height: '100vh',
+    width: '100%',
     color: 'white',
+    alignItems: 'center',
     margin: 0
   },
   heroBackground: {
@@ -21,10 +23,10 @@ const styles = makeStyles((theme)=>({
   },
   contactBtn:{
     ...theme.button,
-    marginLeft: '5rem'
+    marginLeft: '1rem'
   },
   heroBannerText: {
-    marginLeft: '5rem'
+    marginLeft: '1rem'
   }
 }))
 
@@ -35,9 +37,9 @@ const heroBanner = (
   <Grid
   className={classes.mainContainer} container alignItems='center' direction='row'>
     <Grid item className={classes.heroBackground}>
-    <Typography className={classes.heroBannerText} variant='h5' align='left' style={{marginTop: '15rem', marginLeft: '5rem'}}>Hello world, my name is:
+    <Typography className={classes.heroBannerText} variant='h5' align='left' style={{marginTop: '15rem', marginLeft: '1rem'}}>Hello world, my name is:
     </Typography>
-      <Typography className={classes.heroBannerText} variant='h1' align='left'>Benjamin Pitts
+      <Typography className={classes.heroBannerText} variant='h2' align='left'>Benjamin Pitts
       </Typography>
       <Typography className={classes.heroBannerText} variant='h5' align='left'>I am a full-stack software developer from Denver, CO
       </Typography><br />
