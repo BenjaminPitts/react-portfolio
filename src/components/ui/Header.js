@@ -6,7 +6,7 @@ import ToolBar from '@material-ui/core/ToolBar'
 import Tab from '@material-ui/core/Tab'
 import Button from '@material-ui/core/Button'
 import {makeStyles, useTheme} from '@material-ui/core/styles'
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/bannerimage.jpeg'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 import {faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
